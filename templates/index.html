@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <h1>Nombre: Osmar Aldair Yerena Martinez</h1>
+    <p>Grupo: A</p>
+    <img src="../static/suma.png" alt="Imagen de ejemplo">
+    <form action="/sum" method="POST">
+        <label for="num1">Número 1:</label>
+        <input type="text" id="num1" name="num1">
+        <br>
+        <label for="num2">Número 2:</label>
+        <input type="text" id="num2" name="num2">
+        <br>
+        <button type="submit">Sumar</button>
+    </form>
+    {% if result is not none %}
+        <p>Resultado: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
